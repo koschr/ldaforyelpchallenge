@@ -1,8 +1,8 @@
-def fivePercent(distances):
+def fivePercent(distances, percentage = 0.05):
 	total = 0
 	for value in distances.itervalues():
 		total += value
-	five = total * 0.05
+	five = total * percentage
 	tmp = 0
 	fiver = 1
 	dist = sorted([float(key) for key in distances.iterkeys()])

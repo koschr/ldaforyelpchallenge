@@ -80,7 +80,7 @@ class LDAWrapper:
 		self.dtm = dtm
 		self.dictionary = dictionary
 
-	def run(self, num_topics = 10, passes = 10):
+	def run(self, num_topics = 100, passes = 20):
 		print 'Fitting LDA model.\n'
 		self.ldamodel = models.ldamodel.LdaModel(self.dtm, num_topics = num_topics, id2word = self.dictionary, passes = passes)
 		print 'Done fitting LDA model.\n'
