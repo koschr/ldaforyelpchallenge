@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(name='ldayelpchallenge',
-      version='0.1',
+      version='0.2',
       description='Run Latent Dirichlet Allocation on the reviews provided by Yelp for the Yelp data challenge',
       url='https://github.com/koschr/ldaforyelpchallenge',
-      download_url='https://github.com/koschr/ldaforyelpchallenge/tarball/1.0',
+      download_url='https://github.com/koschr/ldaforyelpchallenge/tarball/0.2',
       author='CK',
       author_email='test@example.com',
       license='MIT',
