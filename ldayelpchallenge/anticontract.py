@@ -1,3 +1,6 @@
+"""
+Simple module to expand all english language contractions.
+"""
 import re
 
 contractions_dict = { 
@@ -123,6 +126,18 @@ contractions_dict = {
 contractions_regex = re.compile('(%s)' % '|'.join(contractions_dict.keys()))
 
 def expand_contractions(s, contractions_dict=contractions_dict):
+	"""
+	Takes a string and replaces all contractions with their long forms
+
+	Arguments:
+	s -- The string to be converted
+
+	Keyword arguments:
+	contractions_dict -- Dictionary containg all contractions and their long forms
+
+	Returns:
+	String where have the contractions have been replaced.
+	"""
 	def replace(match):
 		return contractions_dict[match.group(0)]
 	return contractions_regex.sub(replace, s)
